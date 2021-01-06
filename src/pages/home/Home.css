@@ -1,0 +1,12 @@
+.mainContainer {
+	width: 100%;
+	/* background-color: red !important; */
+}
+
+.mainContainer .gridContainer {
+	width: 100%;
+	/* background-color: red; */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
