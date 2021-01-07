@@ -2,12 +2,14 @@ import React from 'react'
 import NavbarDetails from '../../data/NavbarDetails';
 import './Navbar.css';
 
+import {Link} from 'react-router-dom'
+
 const Navbar = () => {
 
     const getdata = (data, index) => {
         return (
             <li className = "nav-links" key = {data.id}>
-                <a href={data.path}> {data.menu}</a>
+                <Link to = {data.path}> {data.menu}</Link>
             </li>
         );
 

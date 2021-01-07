@@ -3,23 +3,30 @@ import ImgData from '../../assets/ImgData';
 import Card from './card/Card';
 
 import './Home.css';
+import {
+    Link,
+} from "react-router-dom";
 
 
 export default function Home() {
     return (
         <>
-            <div className="mainContainer">
-                <div className="gridContainer">
-                    {ImgData.map((data, id) => {
-                        return (
-                            <Card 
-                                img = {data.img}
-                                title = {data.title}
-                                 />
-                        );
-                    })}
+                <div className="mainContainer">
+                    <div className="gridContainer">
+                        {ImgData.map((data, id) => {
+                            return (
+                                <Link to={data.path}>
+                                    <Card
+                                        key = {data.id}
+                                        img={data.img}
+                                        title={data.title}
+                                    />
+                                </Link>
+                            );
+                        })}
+                    </div>
                 </div>
-            </div>
+
         </>
     )
 }

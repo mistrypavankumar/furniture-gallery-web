@@ -28,7 +28,8 @@ body {
 }
 .title h2 {
 	margin-top: 60px;
-	font-size: 2.6rem;
+	font-size: 3rem;
+	margin-bottom: 50px;
 }
 
 /* upload form styles */

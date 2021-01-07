@@ -3,7 +3,7 @@ const NavbarDetails = [
     {       
         id: 1,
         menu: "Home",
-        path: "/home",
+        path: "/",
     },
     {   
         id: 2,
