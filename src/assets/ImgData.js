@@ -1,13 +1,18 @@
 import img1 from './images/bed_.jpg';
-// import img2 from './images/bed_1.jpeg';
-import img3 from './images/dinning_table_.jpeg';
 import img2 from './images/sofa_.jpeg';
+import img3 from './images/dinning_table_.jpeg';
+import img4 from './images/Chairs.jpg';
+import img5 from './images/tvStand.jpg';
+import img6 from './images/dressing_table.jpg';
 
 
 const title = [
     "Beds",
     "Sofa",
     "Dinning Table",
+    "Chairs",
+    "Tv Stand",
+    "Dressing Table",
      ]
 
 const ImgData = [
@@ -26,10 +31,22 @@ const ImgData = [
         img: img3,
         title: title[2], 
     },
-    // {
-    //     id: 4,
-    //     img: img4, 
-    // },
+    {
+        id: 4,
+        img: img4,
+        title: title[3], 
+    },
+    {
+        id: 5,
+        img: img5,
+        title: title[4], 
+    },
+    {
+        id: 6,
+        img: img6,
+        title: title[5], 
+    },
+    
 ]
 
 export default ImgData;
