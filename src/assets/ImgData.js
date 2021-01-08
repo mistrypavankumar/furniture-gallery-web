@@ -65,4 +65,5 @@ const ImgData = [
     
 ]
 
+
 export default ImgData;

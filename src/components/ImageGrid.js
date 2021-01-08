@@ -2,8 +2,8 @@ import React from 'react'
 import useFirestore from '../hooks/useFirestore';
 import {motion} from 'framer-motion';
 
-export default function ImageGrid({ setSelectedImg}) {
-    const { docs } = useFirestore('images');
+export default function ImageGrid({ setSelectedImg}, props) {
+    const { docs } = useFirestore(props.store);
     return (
         <div className = "img-grid">
              {docs && docs.map(doc => (
