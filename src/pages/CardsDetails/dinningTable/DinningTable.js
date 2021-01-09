@@ -6,7 +6,8 @@ import UploadForm from '../../../components/UploadForm';
 import useFirestore from '../../../hooks/useFirestore';
 
 export default function DinningTable() {
-     const { docs } = useFirestore("dinningTables");
+     const _collection = "dinningTable";
+     const { docs } = useFirestore(_collection);
 
       const [selectedImg, setSelectedImg] = useState(null);
     
@@ -15,7 +16,7 @@ export default function DinningTable() {
             <Title 
                 title = "Dinning Tables"
              />
-           <UploadForm />
+           <UploadForm collection = {_collection}/>
       <div className = "img-grid">
              {docs && docs.map(doc => (
                  <motion.div className = "img-wrap" key = {doc.id}

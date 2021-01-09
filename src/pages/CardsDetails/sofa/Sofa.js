@@ -8,7 +8,8 @@ import useFirestore from '../../../hooks/useFirestore';
 
 
 export default function Sofa() {
-    const { docs } = useFirestore("sofas");
+    const _collection = "sofas";
+    const { docs } = useFirestore(_collection);
 
     const [selectedImg, setSelectedImg] = useState(null);
 
@@ -17,7 +18,7 @@ export default function Sofa() {
             <Title
                 title="Sofa's"
             />
-            <UploadForm />
+            <UploadForm collection = {_collection} />
 
             <div>
                 <div className="img-grid">

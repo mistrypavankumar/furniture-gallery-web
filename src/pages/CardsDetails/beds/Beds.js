@@ -8,7 +8,9 @@ import useFirestore from '../../../hooks/useFirestore';
 
 
 export default function Beds() {
-      const { docs } = useFirestore("images");
+      const _collection = "beds";
+     const { docs } = useFirestore(_collection);
+
 
       const [selectedImg, setSelectedImg] = useState(null);
     
@@ -17,7 +19,7 @@ export default function Beds() {
             <Title 
                 title = "Beds"
              />
-           <UploadForm />
+          <UploadForm collection = {_collection}/>
       <div className = "img-grid">
              {docs && docs.map(doc => (
                  <motion.div className = "img-wrap" key = {doc.id}
