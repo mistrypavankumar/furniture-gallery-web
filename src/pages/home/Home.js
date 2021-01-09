@@ -11,21 +11,21 @@ import {
 export default function Home() {
     return (
         <>
-                <div className="mainContainer">
-                    <div className="gridContainer">
-                        {ImgData.map((data, id) => {
-                            return (
-                                <Link to={data.path}>
-                                    <Card
-                                        key = {data.id}
-                                        img={data.img}
-                                        title={data.title}
-                                    />
-                                </Link>
-                            );
-                        })}
-                    </div>
+            <div className="mainContainer">
+                <div className="gridContainer">
+                    {ImgData.map((data, id) => {
+                        return (
+                            <Link to={data.path} key = {id}>
+                                <Card
+                                    key={data.id}
+                                    img={data.img}
+                                    title={data.title}
+                                />
+                            </Link>
+                        );
+                    })}
                 </div>
+            </div>
 
         </>
     )
