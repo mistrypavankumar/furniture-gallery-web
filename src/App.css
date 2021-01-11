@@ -11,6 +11,7 @@
 body {
 	font-family: "Noto Serif";
 	color: var(--secondary);
+	text-decoration: none;
 }
 .App {
 	max-width: 90%;

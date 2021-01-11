@@ -16,7 +16,7 @@ const Navbar = () => {
     }
     return (
         <>
-          <nav>
+          <nav id = "top">
               <ul>
                   {NavbarDetails.map(getdata)}
               </ul>
