@@ -18,7 +18,10 @@ import DinningTable from './pages/CardsDetails/dinningTable/DinningTable';
 import Chairs from './pages/CardsDetails/chairs/Chairs';
 import TvStand from './pages/CardsDetails/tvStand/TvStand';
 import DressingTable from './pages/CardsDetails/dressingTable/DressingTable';
-
+import AuthProvider from './contexts/AuthContext';
+import DashBoard from './pages/Dashboard/DashBoard';
+import PrivateRoute from './components/PrivateRouter';
+import Footer from './components/footer/Footer';
 
 
 function App() {
@@ -30,8 +33,9 @@ function App() {
         title = "Bhole Shankar Furniture"
        />
       
+    <AuthProvider >
       <Switch>
-
+        <PrivateRoute exact path = "/dashboard" component = {DashBoard} /> 
         <Route path="/" exact component={Home} />
         <Route path="/gallery" exact component={Gallery} />
         <Route path='/beds' exact component={Beds} />
@@ -41,7 +45,11 @@ function App() {
         <Route path="/tvstand" exact component={TvStand} />
         <Route path="/dressingtable" exact component={DressingTable} />
         <Redirect to="/" />
+        
       </Switch>
+    </AuthProvider>
+      
+      
 
     </div>
   );

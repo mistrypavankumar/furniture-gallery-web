@@ -6,6 +6,7 @@ import './Home.css';
 import {
     Link,
 } from "react-router-dom";
+import Footer from '../../components/footer/Footer';
 
 
 export default function Home() {
@@ -25,8 +26,9 @@ export default function Home() {
                         );
                     })}
                 </div>
+                
             </div>
-
+            <Footer />
         </>
     )
 }

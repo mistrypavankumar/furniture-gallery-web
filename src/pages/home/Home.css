@@ -1,12 +1,11 @@
 .mainContainer {
 	width: 100%;
-	/* background-color: red !important; */
+	height: auto;
 }
 
 .mainContainer .gridContainer {
-	width: 100%;
-	/* background-color: red; */
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: center;
+	align-items: center;
 }
