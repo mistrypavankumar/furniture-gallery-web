@@ -1,6 +1,5 @@
 import React, {useState,useEffect} from 'react';
 import Navbar from './components/Navbar/Navbar';
-import Title from './components/Title';
 
 
 import {
@@ -22,6 +21,7 @@ import DressingTable from './pages/CardsDetails/dressingTable/DressingTable';
 import AuthProvider from './contexts/AuthContext';
 import DashBoard from './pages/Dashboard/DashBoard';
 import PrivateRoute from './components/PrivateRouter';
+import Login from './pages/adminLogin/Login';
 
 
 function App() {
@@ -66,6 +66,7 @@ function App() {
         <PrivateRoute exact path = "/dashboard" component = {DashBoard} /> 
         <Route path="/" exact component={Home} />
         <Route path="/gallery" exact component={Gallery} />
+        <Route path="/adminlogin" exact component={Login} />
         <Route path='/beds' exact component={Beds} />
         <Route path='/sofa' exact component={Sofa} />
         <Route path="/dinningtable" exact component={DinningTable} />

@@ -1,45 +1,26 @@
-import React, { useRef, useState } from 'react';
-import {login} from './../../contexts/AuthContext'
-import { Link, useHistroy } from "react-router-dom"
+import React from 'react';
+import './Login.css';
 
 const Login = () => {
-
-    const emailRef = useRef();
-    const passwordRef = useRef();
-
-    const [error, setError] = useState("");
-    const [loading, setLoading] = useState(false);
-
-    const history = useHistroy();
-
-
-
-    async function handleSubmit(e) {
-        e.preventDefualt();
-
-        try {
-            setError("");
-            setLoading(true);
-
-            await login(emailRef.current.value, passwordRef.current.value);
-            history.push('/dashboard'); //Admin dashboard
-        } catch {
-            setError("Failed to log in");
-        }
-
-        setLoading(false);
-    }
 
 
     return (
         <>
-            <div id="card">
-                <div id="form">
-                    <form >
-                        
-                    </form>
-                </div>
+            
+            <div className="modal__ animateModal" id="id01">
+                <h1>Admin Login</h1>
+                <div className = "borderanimation"></div>
+                <form className = "model_content" autoComplete = "off">
+                    <label className = "__formLabel" htmlFor="email"><b>Admin Email</b></label>
+                    <input type="email" placeholder="Admin email" name="email" required/>
+                    <label className = "__formLabel" htmlFor="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Password" name ="psw"  required/>
+
+                    <button className = "loginBtn">Log In</button>
+                </form>
             </div>
+
+            
         </>
     );
 }

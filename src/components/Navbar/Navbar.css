@@ -61,6 +61,7 @@ li a.adminBtn_link{
 }
 li a.adminBtn_link:hover{
 	color: #fff !important;
+	opacity: 0.7;
 }
 
 li a.adminBtn_link::before{

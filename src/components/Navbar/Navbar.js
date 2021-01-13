@@ -28,14 +28,14 @@ const Navbar = () => {
             <div className = {isToggle ? "menubar act_toggle": "menubar"}>
                 <ul>
                      {NavbarDetails.map(getdata)}
-                    <Link className ="adminBtn_link" to = "/admin_login">Admin Login</Link>
+                    <Link className ="adminBtn_link" to = "/adminlogin">Admin Login</Link>
                 </ul>
             </div>
           <nav id = "top">
               <ul>
                   {NavbarDetails.map(getdata)}
                   <li className = "adminBtn">
-                      <Link className ="adminBtn_link" to = "/admin_login">Admin Login</Link>
+                      <Link className ="adminBtn_link" to = "/adminlogin">Admin Login</Link>
                   </li>
               </ul>
           </nav>  
