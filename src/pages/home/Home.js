@@ -7,11 +7,15 @@ import {
     Link,
 } from "react-router-dom";
 import Footer from '../../components/footer/Footer';
+import Title from '../../components/Title';
 
 
 export default function Home() {
     return (
-        <>
+        <>  
+        <Title 
+        title = "Bhole Shankar Furniture"
+       />
             <div className="mainContainer">
                 <div className="gridContainer">
                     {ImgData.map((data, id) => {

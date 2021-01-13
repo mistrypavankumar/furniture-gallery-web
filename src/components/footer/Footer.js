@@ -41,7 +41,7 @@ export default function Footer() {
                 </div>
             </footer>
             <div className="footer_cp">
-                <p>© {(new Date().getFullYear())} All Rights Reserved. Created by <span className = "developerName">Misty Pavan Kumar</span></p>
+                <p>© {(new Date().getFullYear())} All Rights Reserved. Created by <span className = "developerName">Mistry Pavan Kumar</span></p>
             </div>
         </div>
     )

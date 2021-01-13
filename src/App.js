@@ -59,9 +59,7 @@ function App() {
       }
     </div>
       <Navbar />
-      <Title 
-        title = "Bhole Shankar Furniture"
-       />
+      
       
     <AuthProvider >
       <Switch>

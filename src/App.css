@@ -82,7 +82,7 @@ label:hover {
 
 /* image grid styles */
 .img-grid {
-	margin: 20px auto;
+	margin: 2rem auto;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 40px;
@@ -90,10 +90,11 @@ label:hover {
 .img-wrap {
 	overflow: hidden;
 	height: 0;
-	padding: 50% 0;
+	padding: 40% 0;
 	/* padding controls height, will always be perfectly square regardless of width */
 	position: relative;
 	opacity: 0.8;
+	border-radius: 2rem;
 }
 .img-wrap img {
 	min-width: 100%;
@@ -124,14 +125,11 @@ label:hover {
 
 /* back to top button */
 
-#scroll_top{
-	/* display: none; */
-}
 
 #scroll_top a{
 	position: fixed;
 	bottom: 2rem;
-	right: 2rem;
+	right: 1rem;
 	z-index: 1;
 	background-color: var(--primary);
 	padding: 0.7rem 0.7rem;
@@ -144,4 +142,23 @@ label:hover {
 	background-color: transparent;
 	color:var(--primary);
 	border: .2rem solid var(--primary);
+}
+
+@media (max-width: 700px){
+	.backdrop img {
+	display: block;
+	max-width: 90%;
+	max-height: 80%;
+	margin: 10rem auto;
+	box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.5);
+	border: 3px solid white;
+	}
+
+	.img-grid {
+	margin: 2rem auto;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 40px;
+	border-radius: 2rem;
+	}
 }

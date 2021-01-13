@@ -125,6 +125,7 @@ footer .leftcontent p {
 	align-items: center;
 	position: relative;
 	text-align: center;
+	padding: 2rem 0rem;
 }
 
 .footer_cp::before {
