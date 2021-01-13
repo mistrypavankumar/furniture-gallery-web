@@ -12,14 +12,10 @@ const NavbarDetails = [
     },
     {   
         id: 3,
-        menu: "Features",
-        path: "/features",
-    },
-    {   
-        id: 4,
         menu: "Contact Us",
         path: "/contact",
     },
+   
 ]
 
 

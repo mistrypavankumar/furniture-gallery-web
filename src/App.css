@@ -5,6 +5,7 @@
 	--primary: #fd7b72;
 	--secondary: #4e4e4e;
 	--error: #ff4a4a;
+	--bgColor: #f7f1e3;
 }
 
 /* base styles & title */
@@ -12,6 +13,7 @@ body {
 	font-family: "Noto Serif";
 	color: var(--secondary);
 	text-decoration: none;
+	background-color: var(--bgColor);
 }
 .App {
 	max-width: 90%;
@@ -118,4 +120,28 @@ label:hover {
 	margin: 60px auto;
 	box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.5);
 	border: 3px solid white;
+}
+
+/* back to top button */
+
+#scroll_top{
+	/* display: none; */
+}
+
+#scroll_top a{
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	z-index: 1;
+	background-color: var(--primary);
+	padding: 0.7rem 0.7rem;
+	border-radius: 2rem;
+	color: #fff;
+	font-size: 3rem;
+}
+
+#scroll_top a.isActive{
+	background-color: transparent;
+	color:var(--primary);
+	border: .2rem solid var(--primary);
 }
