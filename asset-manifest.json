@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/furniture-gallery-web/static/css/main.b4280fe0.chunk.css",
+    "main.js": "/furniture-gallery-web/static/js/main.45415538.chunk.js",
+    "main.js.map": "/furniture-gallery-web/static/js/main.45415538.chunk.js.map",
+    "runtime-main.js": "/furniture-gallery-web/static/js/runtime-main.ff7825db.js",
+    "runtime-main.js.map": "/furniture-gallery-web/static/js/runtime-main.ff7825db.js.map",
+    "static/js/2.4474379e.chunk.js": "/furniture-gallery-web/static/js/2.4474379e.chunk.js",
+    "static/js/2.4474379e.chunk.js.map": "/furniture-gallery-web/static/js/2.4474379e.chunk.js.map",
+    "index.html": "/furniture-gallery-web/index.html",
+    "static/css/main.b4280fe0.chunk.css.map": "/furniture-gallery-web/static/css/main.b4280fe0.chunk.css.map",
+    "static/js/2.4474379e.chunk.js.LICENSE.txt": "/furniture-gallery-web/static/js/2.4474379e.chunk.js.LICENSE.txt",
+    "static/media/Chairs.cc3517ee.jpg": "/furniture-gallery-web/static/media/Chairs.cc3517ee.jpg",
+    "static/media/bed_.1006de48.jpg": "/furniture-gallery-web/static/media/bed_.1006de48.jpg",
+    "static/media/dinning_table_.83350508.jpeg": "/furniture-gallery-web/static/media/dinning_table_.83350508.jpeg",
+    "static/media/dressing_table.421d51b2.jpg": "/furniture-gallery-web/static/media/dressing_table.421d51b2.jpg",
+    "static/media/sofa_.c702da27.jpeg": "/furniture-gallery-web/static/media/sofa_.c702da27.jpeg",
+    "static/media/tvStand.37f36443.jpg": "/furniture-gallery-web/static/media/tvStand.37f36443.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ff7825db.js",
+    "static/js/2.4474379e.chunk.js",
+    "static/css/main.b4280fe0.chunk.css",
+    "static/js/main.45415538.chunk.js"
+  ]
+}
