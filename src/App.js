@@ -18,10 +18,9 @@ import DinningTable from './pages/CardsDetails/dinningTable/DinningTable';
 import Chairs from './pages/CardsDetails/chairs/Chairs';
 import TvStand from './pages/CardsDetails/tvStand/TvStand';
 import DressingTable from './pages/CardsDetails/dressingTable/DressingTable';
-import AuthProvider from './contexts/AuthContext';
 import DashBoard from './pages/Dashboard/DashBoard';
-import PrivateRoute from './components/PrivateRouter';
 import Login from './pages/adminLogin/Login';
+import Authenticated from './components/Authenticated';
 
 
 function App() {
@@ -61,12 +60,21 @@ function App() {
       <Navbar />
       
       
-    <AuthProvider >
+ 
       <Switch>
-        <PrivateRoute exact path = "/dashboard" component = {DashBoard} /> 
+        <Route exact path = "/dashboard">
+          <Authenticated>
+            <DashBoard />
+          </Authenticated>
+        </Route> 
+        
+        <Route path="/adminlogin" exact >
+          <Authenticated nonAuthenticated = {true}>
+            <Login />
+          </Authenticated>
+        </Route>
         <Route path="/" exact component={Home} />
         <Route path="/gallery" exact component={Gallery} />
-        <Route path="/adminlogin" exact component={Login} />
         <Route path='/beds' exact component={Beds} />
         <Route path='/sofa' exact component={Sofa} />
         <Route path="/dinningtable" exact component={DinningTable} />
@@ -76,7 +84,6 @@ function App() {
         <Redirect to="/" />
         
       </Switch>
-    </AuthProvider>
       
       
 
