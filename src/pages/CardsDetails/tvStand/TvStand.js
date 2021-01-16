@@ -1,44 +1,46 @@
 import { motion } from 'framer-motion';
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import Modal from '../../../components/Model';
+import Navbar from '../../../components/Navbar/Navbar';
 import Title from '../../../components/Title';
-import UploadForm from '../../../components/UploadForm';
+// import UploadForm from '../../../components/UploadForm';
 import useFirestore from '../../../hooks/useFirestore';
 
 export default function TvStand() {
-     const _collection = "tvStand";
-     const { docs } = useFirestore(_collection);
+  const _collection = "tvStand";
+  const { docs } = useFirestore(_collection);
 
 
-      const [selectedImg, setSelectedImg] = useState(null);
-    
-    return (
-        <div>
-            <Title 
-                title = "Beds"
-             />
-          <UploadForm collection = {_collection}/>
-      <div className = "img-grid">
-             {docs && docs.map(doc => (
-                 <motion.div className = "img-wrap" key = {doc.id}
-                    layout
-                    whileHover = {{opacity: 1}}
-                    onClick = { () => setSelectedImg(doc.url)}
-                 >
+  const [selectedImg, setSelectedImg] = useState(null);
 
-                 <motion.img src = {doc.url} alt= "uploaded pic"
-                    initial = {{opacity : 0}}
-                    animate = {{opacity: 1}}
-                    transition = {{delay: 1}}
-                  />
+  return (
+    <div>
+      <Navbar />
+      <Title
+        title="Beds"
+      />
+      {/* <UploadForm collection = {_collection}/> */}
+      <div className="img-grid">
+        {docs && docs.map(doc => (
+          <motion.div className="img-wrap" key={doc.id}
+            layout
+            whileHover={{ opacity: 1 }}
+            onClick={() => setSelectedImg(doc.url)}
+          >
 
-                 </motion.div>
-             ))}
-        </div>
-     {selectedImg && (
+            <motion.img src={doc.url} alt="uploaded pic"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1 }}
+            />
+
+          </motion.div>
+        ))}
+      </div>
+      {selectedImg && (
         <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} />
       )}
 
-        </div>
-    )
+    </div>
+  )
 }

@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 
-import UploadForm from '../../../components/UploadForm';
+// import UploadForm from '../../../components/UploadForm';
 import Modal from "../../../components/Model";
 import Title from '../../../components/Title';
 import { motion } from 'framer-motion';
 import useFirestore from '../../../hooks/useFirestore';
+import Navbar from '../../../components/Navbar/Navbar';
 
 
 export default function Sofa() {
@@ -15,10 +16,11 @@ export default function Sofa() {
 
     return (
         <div>
+            <Navbar />
             <Title
                 title="Sofa's"
             />
-            <UploadForm collection = {_collection} />
+            {/* <UploadForm collection={_collection} /> */}
 
             <div>
                 <div className="img-grid">

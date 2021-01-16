@@ -1,6 +1,4 @@
-import React, {useState,useEffect} from 'react';
-import Navbar from './components/Navbar/Navbar';
-
+import React, { useState, useEffect } from 'react';
 
 import {
   Switch,
@@ -11,7 +9,7 @@ import {
 
 import './App.css';
 import Home from './pages/home/Home';
-import Gallery from './pages/Gallery/Gallery';
+import { Contact } from './pages/contact/Contact';
 import Beds from './pages/CardsDetails/beds/Beds';
 import Sofa from './pages/CardsDetails/sofa/Sofa';
 import DinningTable from './pages/CardsDetails/dinningTable/DinningTable';
@@ -23,15 +21,18 @@ import Login from './pages/adminLogin/Login';
 import Authenticated from './components/Authenticated';
 
 
+
 function App() {
 
   const [isVisible, setIsVisible] = useState(false);
 
   // Show button when page is scorlled upto given distance
   const toggleVisibility = () => {
-    if (window.pageYOffset > 300) {
+    if (window.pageYOffset > 300)
+    {
       setIsVisible(true);
-    } else {
+    } else
+    {
       setIsVisible(false);
     }
   };
@@ -51,30 +52,29 @@ function App() {
 
   return (
     <div className="App">
-    <div id="scroll_top" onClick = {scrollToTop}>
-      {isVisible && <Link to="#top">
-        <i class="fas fa-angle-up"></i>
-      </Link>
-      }
-    </div>
-      <Navbar />
-      
-      
- 
+      <div id="scroll_top" onClick={scrollToTop}>
+        {isVisible && <Link to="#top">
+          <i class="fas fa-angle-up"></i>
+        </Link>
+        }
+      </div>
+
       <Switch>
-        <Route exact path = "/dashboard">
+        <Route exact path="/dashboard">
           <Authenticated>
             <DashBoard />
           </Authenticated>
-        </Route> 
-        
+        </Route>
+
         <Route path="/adminlogin" exact >
-          <Authenticated nonAuthenticated = {true}>
+          <Authenticated nonAuthenticated={true}>
             <Login />
           </Authenticated>
         </Route>
         <Route path="/" exact component={Home} />
-        <Route path="/gallery" exact component={Gallery} />
+        <Route path="/contact" exact component={Contact} />
+
+
         <Route path='/beds' exact component={Beds} />
         <Route path='/sofa' exact component={Sofa} />
         <Route path="/dinningtable" exact component={DinningTable} />
@@ -82,10 +82,10 @@ function App() {
         <Route path="/tvstand" exact component={TvStand} />
         <Route path="/dressingtable" exact component={DressingTable} />
         <Redirect to="/" />
-        
+
       </Switch>
-      
-      
+
+
 
     </div>
   );
