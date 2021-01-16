@@ -6,18 +6,17 @@ import Title from '../../../components/Title';
 // import UploadForm from '../../../components/UploadForm';
 import useFirestore from '../../../hooks/useFirestore';
 
-export default function TvStand() {
-  const _collection = "tvStand";
+export default function DinningTable() {
+  const _collection = "dinningTable";
   const { docs } = useFirestore(_collection);
-
 
   const [selectedImg, setSelectedImg] = useState(null);
 
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <Title
-        title="Tv Stands"
+        title="Dinning Tables"
       />
       {/* <UploadForm collection = {_collection}/> */}
       <div className="img-grid">

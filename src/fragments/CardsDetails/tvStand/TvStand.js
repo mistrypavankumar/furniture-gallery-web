@@ -15,9 +15,9 @@ export default function TvStand() {
 
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <Title
-        title="Tv Stands"
+        title="Beds"
       />
       {/* <UploadForm collection = {_collection}/> */}
       <div className="img-grid">

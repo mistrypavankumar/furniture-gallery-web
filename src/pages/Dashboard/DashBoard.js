@@ -32,6 +32,7 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import HomeFragment from "../../fragments/HomeFragment";
 
 
 const drawerWidth = 240;
@@ -225,12 +226,8 @@ export default function DashBoard() {
         })}
       >
         <div className={classes.drawerHeader} />
-        <Typography paragraph>
-
-        </Typography>
-        <Typography paragraph>
-
-        </Typography>
+        {/* <Toolbar /> */}
+        <HomeFragment />
       </main>
     </div>
   );

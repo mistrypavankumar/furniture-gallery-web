@@ -1,13 +1,15 @@
-import { motion } from 'framer-motion';
 import React, { useState } from 'react'
-import Modal from '../../../components/Model';
-import Navbar from '../../../components/Navbar/Navbar';
-import Title from '../../../components/Title';
-// import UploadForm from '../../../components/UploadForm';
-import useFirestore from '../../../hooks/useFirestore';
 
-export default function TvStand() {
-  const _collection = "tvStand";
+// import UploadForm from '../../../components/UploadForm';
+import Modal from "../../../components/Model";
+import Title from '../../../components/Title';
+import { motion } from 'framer-motion';
+import useFirestore from '../../../hooks/useFirestore';
+import Navbar from '../../../components/Navbar/Navbar';
+
+
+export default function Beds() {
+  const _collection = "beds";
   const { docs } = useFirestore(_collection);
 
 
@@ -15,11 +17,11 @@ export default function TvStand() {
 
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <Title
-        title="Tv Stands"
+        title="Beds"
       />
-      {/* <UploadForm collection = {_collection}/> */}
+      {/* <UploadForm collection={_collection} /> */}
       <div className="img-grid">
         {docs && docs.map(doc => (
           <motion.div className="img-wrap" key={doc.id}
