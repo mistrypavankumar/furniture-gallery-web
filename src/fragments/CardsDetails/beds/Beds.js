@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 
-// import UploadForm from '../../../components/UploadForm';
+import UploadForm from '../../../components/UploadForm';
 import Modal from "../../../components/Model";
 import Title from '../../../components/Title';
 import { motion } from 'framer-motion';
 import useFirestore from '../../../hooks/useFirestore';
-import Navbar from '../../../components/Navbar/Navbar';
+// import Navbar from '../../../components/Navbar/Navbar';
 
 
 export default function Beds() {
@@ -21,7 +21,7 @@ export default function Beds() {
       <Title
         title="Beds"
       />
-      {/* <UploadForm collection={_collection} /> */}
+      <UploadForm collection={_collection} />
       <div className="img-grid">
         {docs && docs.map(doc => (
           <motion.div className="img-wrap" key={doc.id}

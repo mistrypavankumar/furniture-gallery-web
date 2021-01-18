@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 import React, { useState } from 'react'
 import Modal from '../../../components/Model';
-import Navbar from '../../../components/Navbar/Navbar';
+// import Navbar from '../../../components/Navbar/Navbar';
 import Title from '../../../components/Title';
-// import UploadForm from '../../../components/UploadForm';
+import UploadForm from '../../../components/UploadForm';
 import useFirestore from '../../../hooks/useFirestore';
 
 export default function DinningTable() {
@@ -18,7 +18,7 @@ export default function DinningTable() {
       <Title
         title="Dinning Tables"
       />
-      {/* <UploadForm collection = {_collection}/> */}
+      <UploadForm collection={_collection} />
       <div className="img-grid">
         {docs && docs.map(doc => (
           <motion.div className="img-wrap" key={doc.id}
