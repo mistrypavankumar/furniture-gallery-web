@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/furniture-gallery-web/static/css/main.5e2aefff.chunk.css",
-    "main.js": "/furniture-gallery-web/static/js/main.fccf7623.chunk.js",
-    "main.js.map": "/furniture-gallery-web/static/js/main.fccf7623.chunk.js.map",
+    "main.css": "/furniture-gallery-web/static/css/main.c4ddd9cf.chunk.css",
+    "main.js": "/furniture-gallery-web/static/js/main.ae85ee04.chunk.js",
+    "main.js.map": "/furniture-gallery-web/static/js/main.ae85ee04.chunk.js.map",
     "runtime-main.js": "/furniture-gallery-web/static/js/runtime-main.ff7825db.js",
     "runtime-main.js.map": "/furniture-gallery-web/static/js/runtime-main.ff7825db.js.map",
-    "static/js/2.40157470.chunk.js": "/furniture-gallery-web/static/js/2.40157470.chunk.js",
-    "static/js/2.40157470.chunk.js.map": "/furniture-gallery-web/static/js/2.40157470.chunk.js.map",
+    "static/js/2.9713b803.chunk.js": "/furniture-gallery-web/static/js/2.9713b803.chunk.js",
+    "static/js/2.9713b803.chunk.js.map": "/furniture-gallery-web/static/js/2.9713b803.chunk.js.map",
     "index.html": "/furniture-gallery-web/index.html",
-    "static/css/main.5e2aefff.chunk.css.map": "/furniture-gallery-web/static/css/main.5e2aefff.chunk.css.map",
-    "static/js/2.40157470.chunk.js.LICENSE.txt": "/furniture-gallery-web/static/js/2.40157470.chunk.js.LICENSE.txt",
+    "static/css/main.c4ddd9cf.chunk.css.map": "/furniture-gallery-web/static/css/main.c4ddd9cf.chunk.css.map",
+    "static/js/2.9713b803.chunk.js.LICENSE.txt": "/furniture-gallery-web/static/js/2.9713b803.chunk.js.LICENSE.txt",
     "static/media/Chairs.cc3517ee.jpg": "/furniture-gallery-web/static/media/Chairs.cc3517ee.jpg",
     "static/media/bed_.1006de48.jpg": "/furniture-gallery-web/static/media/bed_.1006de48.jpg",
     "static/media/dinning_table_.83350508.jpeg": "/furniture-gallery-web/static/media/dinning_table_.83350508.jpeg",
@@ -19,8 +19,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.ff7825db.js",
-    "static/js/2.40157470.chunk.js",
-    "static/css/main.5e2aefff.chunk.css",
-    "static/js/main.fccf7623.chunk.js"
+    "static/js/2.9713b803.chunk.js",
+    "static/css/main.c4ddd9cf.chunk.css",
+    "static/js/main.ae85ee04.chunk.js"
   ]
 }
