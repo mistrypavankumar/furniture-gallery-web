@@ -8,12 +8,16 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 
 
-import Beds from './CardsDetails/beds/Beds';
-import Sofa from './CardsDetails/sofa/Sofa';
-import DinningTable from './CardsDetails/dinningTable/DinningTable';
-import Chairs from './CardsDetails/chairs/Chairs';
-import TvStand from './CardsDetails/tvStand/TvStand';
-import DressingTables from './CardsDetails/dressingTable/DressingTable';
+import Beds from '../CardsDetails/beds/Beds';
+import Sofa from '../CardsDetails/sofa/Sofa';
+import DinningTable from '../CardsDetails/dinningTable/DinningTable';
+import Chairs from '../CardsDetails/chairs/Chairs';
+import TvStand from '../CardsDetails/tvStand/TvStand';
+import DressingTables from '../CardsDetails/dressingTable/DressingTable';
+import { Container } from '@material-ui/core';
+
+import './HomeFragment.css';
+
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -48,16 +52,9 @@ function a11yProps(index) {
     };
 }
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-        flexGrow: 1,
-        width: '100%',
-        backgroundColor: theme.palette.background.paper,
-    },
-}));
 
 export default function HomeFragment() {
-    const classes = useStyles();
+
     const [value, setValue] = React.useState(0);
 
     const handleChange = (event, newValue) => {
@@ -65,8 +62,8 @@ export default function HomeFragment() {
     };
 
     return (
-        <div className={classes.root}>
-            <AppBar position="static" color="default">
+        <div className="Container">
+            <AppBar position="static" color="white" className="appBar">
                 <Tabs
                     value={value}
                     onChange={handleChange}
@@ -75,8 +72,9 @@ export default function HomeFragment() {
                     variant="scrollable"
                     scrollButtons="auto"
                     aria-label="scrollable auto tabs example"
+                    className="tabs"
                 >
-                    <Tab label="Beds" {...a11yProps(0)} color="red" />
+                    <Tab disableRipple label="Beds" {...a11yProps(0)} color="red" />
                     <Tab label="Sofas" {...a11yProps(1)} />
                     <Tab label="Dinning Tables" {...a11yProps(2)} />
                     <Tab label="Chairs" {...a11yProps(3)} />
@@ -84,7 +82,7 @@ export default function HomeFragment() {
                     <Tab label="Dressing Tables" {...a11yProps(5)} />
                 </Tabs>
             </AppBar>
-            <TabPanel value={value} index={0}>
+            <TabPanel value={value} index={0} className="tabPanel">
                 <Beds />
             </TabPanel>
             <TabPanel value={value} index={1}>
