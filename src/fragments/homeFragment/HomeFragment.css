@@ -4,35 +4,48 @@
 	box-sizing: border-box;
 }
 
+/* override */
+.makeStyles-content-9{
+	padding: 2.4rem 0rem;
+	overflow: hidden;
+}
+
+.MuiTab-textColorPrimary.Mui-selected{
+	color: rgb(252, 52, 52) !important;
+}
+
+.MuiAppBar-colorPrimary{
+	background-color: rgb(252, 52, 52) !important;
+}
+
 .Container {
 	max-width: 100%;
 	width: 100%;
 }
 .appBar {
-	max-width: 60%;
+	max-width: 100%;
 	margin: 0 auto;
-	background-color: red;
-	/* display: flex;
-	justify-content: center; */
 }
 .tabs {
 	max-width: 100%;
 	width: 100%;
 }
-.tabPanel {
-}
+
+/* #3f51b5 */
 
 @media (max-width: 1000px) {
 	.Container {
-		max-width: 75%;
-		width: 75%;
+		max-width: 100%;
+		width: 100%;
 		margin-right: 5rem;
-		/* position: relative; */
+		
 	}
 	.appBar {
-		max-width: 60%;
-		width: 60%;
-		/* position: absolute; */
-		background-color: red !important;
+		max-width: 90%;
+		width: 90%;
+	
+	}
+	.MuiTypography-body1{
+		font-size: 1.2rem !important;
 	}
 }

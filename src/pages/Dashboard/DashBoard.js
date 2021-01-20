@@ -1,9 +1,7 @@
 import React, { useState } from "react"
 import { useHistory } from "react-router-dom"
 import { auth } from "../../firebase/config"
-import UploadForm from '../../components/UploadForm';
 
-// import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -41,6 +39,7 @@ const themeColor = "rgb(252, 52, 52)";
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
+    width: "100%",
   },
   appBar: {
     backgroundColor: themeColor,

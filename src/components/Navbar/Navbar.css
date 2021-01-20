@@ -97,7 +97,7 @@ nav ul li a:hover {
 	width: 6vw;
 	height: 6vh;
 	display: flex;
-	justify-content: start;
+	justify-content: flex-start;
 	align-items: center;
 	font-size: 1.8rem;
 	color: var(--primaryColor);
