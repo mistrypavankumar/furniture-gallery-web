@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/furniture-gallery-web/static/css/main.7b1348c7.chunk.css",
-    "main.js": "/furniture-gallery-web/static/js/main.7c1e3d55.chunk.js",
-    "main.js.map": "/furniture-gallery-web/static/js/main.7c1e3d55.chunk.js.map",
+    "main.css": "/furniture-gallery-web/static/css/main.2f671eb4.chunk.css",
+    "main.js": "/furniture-gallery-web/static/js/main.b2fd5ac6.chunk.js",
+    "main.js.map": "/furniture-gallery-web/static/js/main.b2fd5ac6.chunk.js.map",
     "runtime-main.js": "/furniture-gallery-web/static/js/runtime-main.ff7825db.js",
     "runtime-main.js.map": "/furniture-gallery-web/static/js/runtime-main.ff7825db.js.map",
     "static/js/2.7a5187f7.chunk.js": "/furniture-gallery-web/static/js/2.7a5187f7.chunk.js",
     "static/js/2.7a5187f7.chunk.js.map": "/furniture-gallery-web/static/js/2.7a5187f7.chunk.js.map",
     "index.html": "/furniture-gallery-web/index.html",
-    "static/css/main.7b1348c7.chunk.css.map": "/furniture-gallery-web/static/css/main.7b1348c7.chunk.css.map",
+    "static/css/main.2f671eb4.chunk.css.map": "/furniture-gallery-web/static/css/main.2f671eb4.chunk.css.map",
     "static/js/2.7a5187f7.chunk.js.LICENSE.txt": "/furniture-gallery-web/static/js/2.7a5187f7.chunk.js.LICENSE.txt",
     "static/media/Chairs.cc3517ee.jpg": "/furniture-gallery-web/static/media/Chairs.cc3517ee.jpg",
     "static/media/bed_.1006de48.jpg": "/furniture-gallery-web/static/media/bed_.1006de48.jpg",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.ff7825db.js",
     "static/js/2.7a5187f7.chunk.js",
-    "static/css/main.7b1348c7.chunk.css",
-    "static/js/main.7c1e3d55.chunk.js"
+    "static/css/main.2f671eb4.chunk.css",
+    "static/js/main.b2fd5ac6.chunk.js"
   ]
 }
