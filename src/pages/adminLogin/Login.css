@@ -22,19 +22,24 @@ body {
     background-color: var(--bgColor);
 }
 
-.modal__ {
-    width: 60%;
-    height: 60vh;
-    margin: 5rem auto;
-    position: relative;
-}
-
-.modal__ h1 {
-    font-size: 2rem;
+.mobel_container {
+    /* background-color: green; */
+    width: 100%;
+    height: 100vh;
+    /* mobile 80 */
     display: flex;
     justify-content: center;
-    padding-bottom: 1rem;
+    align-items: center;
+}
+
+.modal__ {
+    width: 60%;
+    height: 80vh;
+    margin: 0rem auto;
+    margin-bottom: 5rem;
+    /* mobiel 10rem */
     position: relative;
+    /* background-color: red; */
 }
 
 .borderanimation {
@@ -45,6 +50,7 @@ body {
     border-radius: 50%;
     position: relative;
     overflow: hidden;
+    margin-bottom: 3rem;
 }
 
 .borderanimation::after {
@@ -99,7 +105,7 @@ input[type=password] {
 }
 
 .modal__ .model_content {
-    margin-top: 5rem;
+    margin-top: 3rem;
     min-width: 30rem;
     width: 20rem;
     height: auto;
@@ -107,6 +113,13 @@ input[type=password] {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+.modal__ .model_content h1 {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
 }
 
 button.loginBtn {
@@ -161,13 +174,33 @@ button.loginBtn:hover {
 
 
 @media screen and (max-width: 532px) {
+    .mobel_container {
+        /* background-color: green; */
+        width: 100%;
+        height: 80vh;
+        /* mobile 80 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .modal__ {
         width: 100%;
-        margin-top: 4rem;
+        height: 100vh;
+        margin: 0rem auto;
+        margin-bottom: 1rem;
+        /* mobiel 10rem */
+        position: relative;
+        /* background-color: red; */
+    }
+
+    .modal__ {
+        /* width: 100%; */
+        /* margin-top: 10rem; */
     }
 
     .modal__ .model_content {
-        margin-top: 3rem;
+        margin-top: 0rem;
         min-width: 45%;
     }
 }
